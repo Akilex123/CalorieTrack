@@ -6,8 +6,8 @@ function Summary() {
 
   return (
     <>
-      <div className="bg-blue-950 w-screen h-screen p-10 flex flex-col justify-center items-center gap-10">
-        <div className="bg-blue-200/10 w-100 h-70 rounded-2xl">
+      <div className="bg-blue-950 w-screen h-[calc(100vh-60px)] p-10 flex flex-col justify-center items-center gap-7">
+        <div className="bg-blue-200/10 w-110 h-70 rounded-2xl">
           <div className="flex justify-center px-3 pt-5 pb-3 gap-5">
             <div className=" flex-1/3 flex flex-col items-center justify-center">
               <h5 className="text-white font-bold">123</h5>
@@ -96,7 +96,7 @@ function Summary() {
           </div>
         </div>
         <div className="flex gap-20 ">
-          <div className="bg-blue-200/10 w-100 h-70 rounded-2xl flex flex-col gap-1.5">
+          <div className="bg-blue-200/10 w-80 h-70 rounded-2xl flex flex-col gap-1.5">
             <div
               className="flex items-center  justify-between p-3
           "
@@ -158,7 +158,7 @@ function Summary() {
               </button>
             </div>
           </div>
-          <div className="bg-blue-200/10 w-100 h-70 rounded-2xl flex flex-col gap-1.5">
+          <div className="bg-blue-200/10 w-80 h-70 rounded-2xl flex flex-col gap-1.5">
             <div
               className="flex items-center  justify-between p-3
           "

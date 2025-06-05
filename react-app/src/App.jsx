@@ -7,9 +7,9 @@ import Starting4 from "./Components/Starting4";
 import Starting5 from "./Components/Starting5";
 import Starting6 from "./Components/Starting6";
 import Summary from "./Components/Summary";
-import Home from "./Components/Home";
-import Info from "./Components/Info";
-import Results from "./Components/Results";
+import Layout from "./Components/Layout";
+import Fasting from "./Components/Fasting";
+import Recipes from "./Components/Recipes";
 
 function App() {
   return (
@@ -22,9 +22,12 @@ function App() {
           <Route path="/starting4" element={<Starting4></Starting4>}></Route>
           <Route path="/starting5" element={<Starting5></Starting5>}></Route>
           <Route path="/starting6" element={<Starting6></Starting6>}></Route>
-          <Route path="/summary" element={<Summary></Summary>}></Route>
-          <Route path="/info" element={<Info></Info>}></Route>
-          <Route path="/results" element={<Results></Results>}></Route>
+          <Route element={<Layout></Layout>}>
+            {/*Ovako oznacavmo koje sve rute treba da budu ispod Outleta */}
+            <Route path="/summary" element={<Summary></Summary>}></Route>
+            <Route path="/fasting" element={<Fasting></Fasting>}></Route>
+            <Route path="/recipes" element={<Recipes></Recipes>}></Route>
+          </Route>
         </Routes>
       </Router>
     </>
