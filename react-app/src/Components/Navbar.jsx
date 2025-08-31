@@ -11,12 +11,7 @@ function Navbar() {
         >
           👤
         </Link>
-        <Link
-          to="/recipes"
-          className="text-white text-3xl font-light hover:text-white/60 transition duration-300"
-        >
-          📖
-        </Link>
+
         <Link
           to="/fasting"
           className="text-white text-3xl font-light hover:text-white/60 transition duration-300"
